@@ -1,26 +1,26 @@
 {
-  "name": "@flaviotux/express-es6",
+  "name": "backendApi",
   "version": "0.0.5",
-  "description": "Express boilerplate ES6",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/flaviotux/express-es6"
-  },
+  "description": "backendApi",
   "main": "src/server.js",
-  "author": "Flávio Ribeiro <flavioribeiro.tech@gmail.com>",
+  "author": "",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "cross-env DEBUG=express-es6:* nodemon --exec babel-node .",
+    "start": "cross-env DEBUG=express-es6:* nodemon --exec babel-node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "debug": "^4.3.3",
     "dotenv": "^10.0.0",
     "errorhandler": "^1.5.1",
-    "express": "^4.17.2",
+    "express": "^4.18.1",
     "lodash": "^4.17.21",
     "morgan": "^1.10.0",
-    "passport": "^0.5.2"
+    "mssql": "^8.1.0",
+    "passport": "^0.5.2",
+    "sequelize": "^6.19.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
@@ -29,16 +29,7 @@
     "@babel/node": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "cross-env": "^6.0.3",
-    "eslint": "^8.5.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.2",
     "prettier": "^2.5.1"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "tabWidth": 2
   }
 }
